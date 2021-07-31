@@ -1,27 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <router-view />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import firebase from 'firebase'
+import router from './router'
 
 export default defineComponent({
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  // ユーザーがログインしているかしていないかの条件分岐
+  setup() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        router.replace('/dashboard')
+      } else {
+        router.replace('/')
+      }
+    })
+  },
 })
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
