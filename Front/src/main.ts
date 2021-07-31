@@ -6,6 +6,8 @@ import authStore, { authStoreKey } from './store/auth'
 import router from './router'
 import store from './store'
 import './index.css'
+import DashboardLayout from './components/layouts/DashboardLayout.vue'
+import EmptyLayout from './components/layouts/EmptyLayout.vue'
 
 const config = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -21,6 +23,8 @@ firebase.initializeApp(config)
 firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
 
 const app = createApp(App)
+app.component('default-layout', DashboardLayout)
+app.component('empty-layout', EmptyLayout)
 app.use(router)
 app.use(store)
 app.provide(authStoreKey, authStore())

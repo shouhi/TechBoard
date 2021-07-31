@@ -1,10 +1,16 @@
 <template>
-  <div class="form-container sign-up-container">
-    <form action="#" @submit.prevent="Register">
-      <h1>Sign Up</h1>
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" v-model="email" />
-      <input type="password" placeholder="Password" v-model="password" />
+  <div class="form-container sign-in-container">
+    <form action="#" @submit.prevent="Login">
+      <h1>Sign In</h1>
+      <input type="text" name="email" placeholder="Email" v-model="email" />
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        id="pwd"
+        v-model="password"
+      />
+      <a href="#">Forgot your password?</a>
       <div class="buttons">
         <button>Sign Up</button>
       </div>
@@ -17,22 +23,20 @@ import { defineComponent, ref } from 'vue'
 import firebase from 'firebase'
 
 export default defineComponent({
-  name: 'SignUp',
   setup() {
     const email = ref('')
     const password = ref('')
 
-    const Register = () => {
+    const Login = () => {
       firebase
         .auth()
-        .createUserWithEmailAndPassword(email.value, password.value)
-        .then((user) => {
-          alert(user)
-        })
+        .signInWithEmailAndPassword(email.value, password.value)
+        .then((data) => console.log(data))
         .catch((err) => alert(err.message))
     }
+
     return {
-      Register,
+      Login,
       email,
       password,
     }
@@ -41,6 +45,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.buttons {
+  margin-top: 20px;
+}
+
 h1 {
   font-weight: bold;
   margin: 0;
@@ -48,6 +56,14 @@ h1 {
 
 h2 {
   text-align: center;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
 }
 
 span {
@@ -82,11 +98,6 @@ button:focus {
   outline: none;
 }
 
-button.ghost {
-  background-color: transparent;
-  border-color: #ffffff;
-}
-
 form {
   background-color: #ffffff;
   display: flex;
@@ -95,9 +106,9 @@ form {
   flex-direction: column;
   padding: 0 50px;
   height: 100%;
-  text-align: center;
   max-width: 500px;
   margin: 0 auto;
+  text-align: center;
 }
 
 input {
@@ -115,18 +126,14 @@ input {
   transition: all 0.6s ease-in-out;
 }
 
-.sign-up-container {
+.sign-in-container {
   left: 0;
   width: 50%;
-  opacity: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
-.container.right-panel-active .sign-up-container {
+.container.right-panel-active .sign-in-container {
   transform: translateX(100%);
-  opacity: 1;
-  z-index: 5;
-  animation: show 0.6s;
 }
 
 @keyframes show {
@@ -152,9 +159,5 @@ input {
   margin: 0 5px;
   height: 40px;
   width: 40px;
-}
-
-.buttons {
-  margin-top: 20px;
 }
 </style>

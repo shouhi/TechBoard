@@ -21,8 +21,8 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import SignIn from './SignIn.vue'
-import SignUp from './SignUp.vue'
+import SignIn from '../components/auth/SignIn.vue'
+import SignUp from '../components/auth/SignUp.vue'
 
 export default defineComponent({
   name: 'Home',
@@ -45,10 +45,6 @@ export default defineComponent({
 h1 {
   font-weight: bold;
   margin: 0;
-}
-
-h2 {
-  text-align: center;
 }
 
 p {
@@ -115,15 +111,6 @@ input {
   width: 100%;
 }
 
-.container {
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 768px;
-  max-width: 100%;
-  min-height: 480px;
-}
-
 @keyframes show {
   0%,
   49.99% {
@@ -149,7 +136,7 @@ input {
   z-index: 100;
 }
 
-.container.right-panel-active .overlay-container {
+.right-panel-active .overlay-container {
   transform: translateX(-100%);
 }
 
@@ -168,7 +155,7 @@ input {
   transition: transform 0.6s ease-in-out;
 }
 
-.container.right-panel-active .overlay {
+.right-panel-active .overlay {
   transform: translateX(50%);
 }
 
@@ -191,7 +178,7 @@ input {
   transform: translateX(-20%);
 }
 
-.container.right-panel-active .overlay-left {
+.right-panel-active .overlay-left {
   transform: translateX(0);
 }
 
@@ -200,7 +187,7 @@ input {
   transform: translateX(0);
 }
 
-.container.right-panel-active .overlay-right {
+.right-panel-active .overlay-right {
   transform: translateX(20%);
 }
 </style>
