@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-3xl font-medium text-gray-700">board</h3>
+    <h3 class="text-3xl font-medium text-gray-700">Create board</h3>
     <div class="mt-4">
       <div class="mt-4">
         <div
