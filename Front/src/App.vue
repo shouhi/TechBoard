@@ -15,6 +15,7 @@ export default defineComponent({
   // ユーザーがログインしているかしていないかの条件分岐
   setup() {
     const defaultLayout = 'default'
+
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         router.replace('/dashboard')
