@@ -30,9 +30,9 @@ Thanks goes to these wonderful people
 <!-- markdownlint-disable -->
 <table>
   <tr>
+     <td align="center"><a href="https://twitter.com/shouhi_ide"><img src="https://user-images.githubusercontent.com/63713624/123041698-9f3c9b00-d430-11eb-8faf-e98e27e347db.jpg" width="100px;" alt=""/><br /><sub><b>井手翔陽</b></sub></a><br /><a href="https://github.com/TechUni2020/TechBoard/commits?author=shouhi" title="Documentation">📖</a> <a href="#projectManagement-shouhi" title="Project Management">📆</a>
     <td align="center"><a href="https://twitter.com/tayzar133"><img src="https://avatars.githubusercontent.com/u/62434815?v=4" width="100px;" alt=""/><br /><sub><b>テザー ナイ ウィン</b></sub></a><br /><a href="https://github.com/TechUni2020/homepage/commit/aaf79ee71e6dfb6aa93e06ccb1036661a54ed681" title="Documentation">📖</a> <a href="#projectManagement-
 tayzar-v98" title="Project Management">📆</a>
-    <td align="center"><a href="https://twitter.com/shouhi_ide"><img src="https://user-images.githubusercontent.com/63713624/123041698-9f3c9b00-d430-11eb-8faf-e98e27e347db.jpg" width="100px;" alt=""/><br /><sub><b>井手翔陽</b></sub></a><br /><a href="https://github.com/TechUni2020/TechBoard/commits?author=shouhi" title="Documentation">📖</a> <a href="#projectManagement-shouhi" title="Project Management">📆</a>
 </table>
 
 
