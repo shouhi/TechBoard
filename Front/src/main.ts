@@ -5,7 +5,7 @@ import 'firebase/auth'
 import authStore, { authStoreKey } from './store/auth'
 import router from './router'
 import store from './store'
-import './index.css'
+import '../src/assets/styles/tailwind.css'
 import DashboardLayout from './components/layouts/DashboardLayout.vue'
 import EmptyLayout from './components/layouts/EmptyLayout.vue'
 
