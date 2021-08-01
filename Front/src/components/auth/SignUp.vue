@@ -17,6 +17,7 @@ import { defineComponent, ref } from 'vue'
 import firebase from 'firebase'
 
 export default defineComponent({
+  name: 'SignUp',
   setup() {
     const email = ref('')
     const password = ref('')

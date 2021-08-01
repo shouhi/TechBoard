@@ -47,6 +47,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  text-align: center;
+}
+
 p {
   font-size: 14px;
   font-weight: 100;
@@ -111,6 +115,15 @@ input {
   width: 100%;
 }
 
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
 @keyframes show {
   0%,
   49.99% {
@@ -136,7 +149,7 @@ input {
   z-index: 100;
 }
 
-.right-panel-active .overlay-container {
+.container.right-panel-active .overlay-container {
   transform: translateX(-100%);
 }
 
@@ -155,7 +168,7 @@ input {
   transition: transform 0.6s ease-in-out;
 }
 
-.right-panel-active .overlay {
+.container.right-panel-active .overlay {
   transform: translateX(50%);
 }
 
@@ -178,7 +191,7 @@ input {
   transform: translateX(-20%);
 }
 
-.right-panel-active .overlay-left {
+.container.right-panel-active .overlay-left {
   transform: translateX(0);
 }
 
@@ -187,7 +200,7 @@ input {
   transform: translateX(0);
 }
 
-.right-panel-active .overlay-right {
+.container.right-panel-active .overlay-right {
   transform: translateX(20%);
 }
 </style>
