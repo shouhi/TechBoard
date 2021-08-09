@@ -35,30 +35,64 @@
           <CreateBoardDialog
             v-show="showModal"
             @close="showModal = !showModal"
+            @createBoard="createBoard"
           />
           <p class="ml-9 mt-3">New Board</p>
         </div>
+        <BoardsList
+          v-for="item in state.boards"
+          :key="item.uuid"
+          :board="item"
+        ></BoardsList>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import CreateBoardDialog from '../components/dialog/CreateBoardDialog.vue'
+import CreateBoardDialog from '../../components/dialog/CreateBoardDialog.vue'
+import BoardsList from '../../components/dashboard/BoardsList.vue'
 import { ref } from 'vue'
-import { defineComponent } from 'vue'
+import { defineComponent, reactive } from 'vue'
+import axios from 'axios'
 
-const components = {
-  CreateBoardDialog,
+const baseURL = 'http://localhost:3000/'
+
+type Todo = {
+  uuid: string
+  title: string
 }
-export default {
+
+export default defineComponent({
   name: 'App',
-  components,
+  components: { CreateBoardDialog, BoardsList },
   setup() {
+    const getBoards = () => {
+      axios.get(baseURL).then((res) => {
+        if (res && res.data) {
+          console.log(res)
+          state.boards = res.data.resBody
+        }
+      })
+    }
+
+    getBoards()
+
+    const createBoard = async () => {
+      await axios.put(baseURL, { title: state.title })
+      getBoards()
+    }
+
+    const state = reactive({
+      title: '',
+      boards: [],
+    })
     const showModal = ref(false)
     return {
+      state,
       showModal,
+      createBoard,
     }
   },
-}
+})
 </script>

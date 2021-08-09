@@ -79,6 +79,7 @@
                 </h3>
                 <div class="mt-2">
                   <input
+                    v-model="name"
                     type="text"
                     class="
                       px-2
@@ -88,7 +89,7 @@
                       rounded-md
                       focus:outline-none
                     "
-                    placeholder="Title"
+                    placeholder="ボード名"
                   />
                 </div>
               </div>
@@ -97,7 +98,7 @@
           <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
             <button
               type="button"
-              @click="CreateBoard"
+              @click="$emit('createBoard')"
               class="
                 w-full
                 inline-flex
@@ -153,18 +154,31 @@
     </div>
   </transition>
 </template>
-<script>
-import { ref, watch } from 'vue'
+<script lang="ts">
+import { ref, watch, PropType, defineComponent } from 'vue'
+
+type Board = {
+  uuid: string
+  title: string
+}
+
 const props = {
   show: {
     type: Boolean,
     default: false,
   },
+  board: {
+    type: Object as PropType<Board>,
+    default: null,
+  },
 }
-export default {
+export default defineComponent({
   name: 'CreateBoardDialog',
   props,
   setup(props) {
+    const state = {
+      board: JSON.parse(JSON.stringify(props.board)),
+    }
     const showModal = ref(false)
     watch(
       () => props.show,
@@ -173,8 +187,9 @@ export default {
       }
     )
     return {
+      state,
       showModal,
     }
   },
-}
+})
 </script>
