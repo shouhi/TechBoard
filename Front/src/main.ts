@@ -4,7 +4,7 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import authStore, { authStoreKey } from './store/auth'
 import router from './router'
-import store from './store'
+import { store, key } from './store/board'
 import './index.css'
 import DashboardLayout from './components/layouts/DashboardLayout.vue'
 import EmptyLayout from './components/layouts/EmptyLayout.vue'
@@ -28,5 +28,6 @@ app.component('empty-layout', EmptyLayout)
 
 app.use(router)
 app.use(store)
+app.use(store, key)
 app.provide(authStoreKey, authStore())
 app.mount('#app')
