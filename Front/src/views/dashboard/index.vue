@@ -39,12 +39,20 @@
           />
           <p class="ml-9 mt-3">New Board</p>
         </div>
-        <BoardsList
-          v-for="item in state.boards"
-          :key="item.uuid"
-          :board="item"
-        ></BoardsList>
       </div>
+      <table>
+        <thead>
+          <tr>
+            <th>著者</th>
+            <th>名前</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="board in boards" :key="board.name">
+            <td>{{ board.name }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>
@@ -53,44 +61,25 @@
 import CreateBoardDialog from '../../components/dialog/CreateBoardDialog.vue'
 import BoardsList from '../../components/dashboard/BoardsList.vue'
 import { ref } from 'vue'
-import { defineComponent, reactive } from 'vue'
-import axios from 'axios'
-
-const baseURL = 'http://localhost:3000/'
-
-type Todo = {
-  uuid: string
-  title: string
-}
+import { Board } from '../../store/board'
+import { useStore } from 'vuex'
+import { defineComponent, computed } from 'vue'
 
 export default defineComponent({
   name: 'App',
   components: { CreateBoardDialog, BoardsList },
   setup() {
-    const getBoards = () => {
-      axios.get(baseURL).then((res) => {
-        if (res && res.data) {
-          console.log(res)
-          state.boards = res.data.resBody
-        }
-      })
-    }
-
-    getBoards()
-
-    const createBoard = async () => {
-      await axios.put(baseURL, { title: state.title })
-      getBoards()
-    }
-
-    const state = reactive({
-      title: '',
-      boards: [],
-    })
     const showModal = ref(false)
+    const store = useStore()
+    const createBoard = (name: string) => {
+      store.dispatch('add', {
+        name: name,
+      } as Board)
+      showModal.value = !showModal.value
+    }
     return {
-      state,
       showModal,
+      boards: computed(() => store.state.boards), // ボードの一覧を返す
       createBoard,
     }
   },

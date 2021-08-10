@@ -79,7 +79,7 @@
                 </h3>
                 <div class="mt-2">
                   <input
-                    v-model="name"
+                    v-model="board.name"
                     type="text"
                     class="
                       px-2
@@ -98,7 +98,7 @@
           <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
             <button
               type="button"
-              @click="$emit('createBoard')"
+              @click="createBoard"
               class="
                 w-full
                 inline-flex
@@ -155,40 +155,22 @@
   </transition>
 </template>
 <script lang="ts">
-import { ref, watch, PropType, defineComponent } from 'vue'
-
-type Board = {
-  uuid: string
-  title: string
-}
-
-const props = {
-  show: {
-    type: Boolean,
-    default: false,
-  },
-  board: {
-    type: Object as PropType<Board>,
-    default: null,
-  },
-}
+import { defineComponent, reactive } from 'vue'
 export default defineComponent({
   name: 'CreateBoardDialog',
-  props,
-  setup(props) {
-    const state = {
-      board: JSON.parse(JSON.stringify(props.board)),
+  emits: ['createBoard'],
+  setup(_, context) {
+    const board = reactive({
+      name: '',
+      author: '',
+    })
+    const createBoard = () => {
+      context.emit('createBoard', board.name)
+      board.name = ''
     }
-    const showModal = ref(false)
-    watch(
-      () => props.show,
-      (show) => {
-        showModal.value = show
-      }
-    )
     return {
-      state,
-      showModal,
+      board,
+      createBoard,
     }
   },
 })
