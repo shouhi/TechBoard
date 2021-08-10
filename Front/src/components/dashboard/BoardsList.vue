@@ -1,24 +1,24 @@
 <template>
-  <div class="m-4 px-3 py-2 bg-gray-700 rounded-md shadow">
-    <div class="flex flex-wrap content-center h-12">
-      <div class="flex-grow-3 text-left">
-        <div class="text-left flex-grow-1">
-          <input
-            v-model="state.board.title"
-            type="text"
-            class="
-              w-full
-              px-2
-              py-1
-              bg-gray-700
-              border border-gray-400
-              rounded-md
-              focus:outline-none
-            "
-            placeholder="Title"
-          />
-        </div>
+  <div class="flex flex-wrap">
+    <div
+      v-for="board in boards"
+      :key="board"
+      class="
+        m-4
+        px-3
+        py-2
+        h-60
+        w-48
+        bg-white
+        rounded-md
+        shadow
+        hover:bg-gray-100
+      "
+    >
+      <div class="mt-5">
+        <img v-bind:src="image" class="w-48" />
       </div>
+      <p>{{ board.name }}</p>
     </div>
   </div>
 </template>
@@ -27,24 +27,19 @@
 import { defineComponent, PropType } from 'vue'
 
 type Board = {
-  uuid: string
-  title: string
+  name: string
 }
 
 export default defineComponent({
   props: {
-    board: {
+    boards: {
       type: Object as PropType<Board>,
       default: null,
     },
   },
   setup(props) {
-    const state = {
-      board: JSON.parse(JSON.stringify(props.board)),
-    }
-
     return {
-      state,
+      image: 'src/assets/logo.png',
     }
   },
 })

@@ -40,19 +40,7 @@
           <p class="ml-9 mt-3">New Board</p>
         </div>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>著者</th>
-            <th>名前</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="board in boards" :key="board.name">
-            <td>{{ board.name }}</td>
-          </tr>
-        </tbody>
-      </table>
+      <BoardsList :boards="boards" />
     </div>
   </div>
 </template>
