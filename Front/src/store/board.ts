@@ -27,14 +27,14 @@ export const store = createStore<State>({
       return state.boards ? state.boards[0] : ({} as Board)
     },
   },
-  actions: {
-    add({ commit, state }, board: Board) {
-      commit('add', { board: board })
+  mutations: {
+    setBoard(state, { board }) {
+      state.boards.push(board)
     },
   },
-  mutations: {
-    add(state, { board }) {
-      state.boards.push(board)
+  actions: {
+    createBoard({ commit, state }, board: Board) {
+      commit('setBoard', { board: board })
     },
   },
 })

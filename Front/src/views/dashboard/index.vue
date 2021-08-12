@@ -60,7 +60,7 @@ export default defineComponent({
     const showModal = ref(false)
     const store = useStore()
     const createBoard = (name: string) => {
-      store.dispatch('add', {
+      store.dispatch('createBoard', {
         name: name,
       } as Board)
       showModal.value = !showModal.value
