@@ -32,9 +32,10 @@ export default class Environment {
   }
 
   static makeApiUrl(path: string) {
+    console.log(import.meta.env.VITE_API_HOST)
     if (path.startsWith('/')) {
-      return import.meta.env.API_HOST + '/api/v1' + path
+      return import.meta.env.VITE_API_HOST + '/api/v1' + path
     }
-    return import.meta.env.API_HOST + '/api/v1/' + path
+    return import.meta.env.VITE_API_HOST + '/api/v1/' + path
   }
 }
