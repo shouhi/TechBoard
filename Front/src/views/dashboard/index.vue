@@ -40,6 +40,7 @@
           <p class="ml-9 mt-3">New Board</p>
         </div>
       </div>
+      <h3 class="text-3xl font-medium text-gray-700 mt-10">All Boards</h3>
       <BoardsList :boards="boards" />
     </div>
   </div>
