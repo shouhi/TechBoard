@@ -40,6 +40,7 @@
           <p class="ml-9 mt-3">New Board</p>
         </div>
       </div>
+      <h3 class="text-3xl font-medium text-gray-700 mt-10">All Boards</h3>
       <BoardsList :boards="boards" />
     </div>
   </div>
@@ -52,6 +53,7 @@ import { ref } from 'vue'
 import { Board } from '../../store/board'
 import { useStore } from 'vuex'
 import { defineComponent, computed } from 'vue'
+import router from '../../router'
 
 export default defineComponent({
   name: 'App',
@@ -59,11 +61,12 @@ export default defineComponent({
   setup() {
     const showModal = ref(false)
     const store = useStore()
-    const createBoard = (name: string) => {
-      store.dispatch('add', {
+    const createBoard = async (name: string) => {
+      const res = await store.dispatch('createBoard', {
         name: name,
       } as Board)
       showModal.value = !showModal.value
+      router.push(`/boards/${res.id}?notice=新しいボードを作成しました`)
     }
     return {
       showModal,

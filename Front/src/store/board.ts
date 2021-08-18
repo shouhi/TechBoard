@@ -1,5 +1,7 @@
+import axios from 'axios'
 import { InjectionKey } from 'vue'
 import { createStore, useStore as baseUseStore, Store } from 'vuex'
+import env from '../libs/environment'
 
 export interface Board {
   name: string
@@ -27,14 +29,20 @@ export const store = createStore<State>({
       return state.boards ? state.boards[0] : ({} as Board)
     },
   },
-  actions: {
-    add({ commit, state }, board: Board) {
-      commit('add', { board: board })
+  mutations: {
+    setBoard(state, { board }) {
+      state.boards.push(board)
     },
   },
-  mutations: {
-    add(state, { board }) {
-      state.boards.push(board)
+  actions: {
+    // createBoard({ commit, state }, board: Board) {
+    //   commit('setBoard', { board: board })
+    // },
+    async createBoard({ commit, state }, payload) {
+      const res = await axios.post(env.makeApiUrl(`/boards`), payload)
+      console.log(res)
+      commit('setBoard', res)
+      return res
     },
   },
 })
