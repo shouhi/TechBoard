@@ -5,60 +5,6 @@
   "LazyBoardsList": {
     "description": "Auto imported from /components/dashboard/BoardsList.vue"
   },
-  "CreateBoardDialog": {
-    "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
-  },
-  "LazyCreateBoardDialog": {
-    "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
-  },
-  "CreateNameDialog": {
-    "description": "Auto imported from /components/dialog/CreateNameDialog.vue"
-  },
-  "LazyCreateNameDialog": {
-    "description": "Auto imported from /components/dialog/CreateNameDialog.vue"
-  },
-  "EditBoardDialog": {
-    "description": "Auto imported from /components/dialog/EditBoardDialog.vue"
-  },
-  "LazyEditBoardDialog": {
-    "description": "Auto imported from /components/dialog/EditBoardDialog.vue"
-  },
-  "EditSharedCardDialog": {
-    "description": "Auto imported from /components/dialog/EditSharedCardDialog.vue"
-  },
-  "LazyEditSharedCardDialog": {
-    "description": "Auto imported from /components/dialog/EditSharedCardDialog.vue"
-  },
-  "EmailListDialog": {
-    "description": "Auto imported from /components/dialog/EmailListDialog.vue"
-  },
-  "LazyEmailListDialog": {
-    "description": "Auto imported from /components/dialog/EmailListDialog.vue"
-  },
-  "InstantLoginDialog": {
-    "description": "Auto imported from /components/dialog/InstantLoginDialog.vue"
-  },
-  "LazyInstantLoginDialog": {
-    "description": "Auto imported from /components/dialog/InstantLoginDialog.vue"
-  },
-  "InviteUser": {
-    "description": "Auto imported from /components/dialog/InviteUser.vue"
-  },
-  "LazyInviteUser": {
-    "description": "Auto imported from /components/dialog/InviteUser.vue"
-  },
-  "MembersDialog": {
-    "description": "Auto imported from /components/dialog/MembersDialog.vue"
-  },
-  "LazyMembersDialog": {
-    "description": "Auto imported from /components/dialog/MembersDialog.vue"
-  },
-  "SharedCardSizeDialog": {
-    "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
-  },
-  "LazySharedCardSizeDialog": {
-    "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
-  },
   "ColorSelect": {
     "description": "Auto imported from /components/common/ColorSelect.vue"
   },
@@ -112,6 +58,60 @@
   },
   "LazyBoardMenuBar": {
     "description": "Auto imported from /components/boards/BoardMenuBar.vue"
+  },
+  "CreateBoardDialog": {
+    "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
+  },
+  "LazyCreateBoardDialog": {
+    "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
+  },
+  "CreateNameDialog": {
+    "description": "Auto imported from /components/dialog/CreateNameDialog.vue"
+  },
+  "LazyCreateNameDialog": {
+    "description": "Auto imported from /components/dialog/CreateNameDialog.vue"
+  },
+  "EditBoardDialog": {
+    "description": "Auto imported from /components/dialog/EditBoardDialog.vue"
+  },
+  "LazyEditBoardDialog": {
+    "description": "Auto imported from /components/dialog/EditBoardDialog.vue"
+  },
+  "EditSharedCardDialog": {
+    "description": "Auto imported from /components/dialog/EditSharedCardDialog.vue"
+  },
+  "LazyEditSharedCardDialog": {
+    "description": "Auto imported from /components/dialog/EditSharedCardDialog.vue"
+  },
+  "EmailListDialog": {
+    "description": "Auto imported from /components/dialog/EmailListDialog.vue"
+  },
+  "LazyEmailListDialog": {
+    "description": "Auto imported from /components/dialog/EmailListDialog.vue"
+  },
+  "InstantLoginDialog": {
+    "description": "Auto imported from /components/dialog/InstantLoginDialog.vue"
+  },
+  "LazyInstantLoginDialog": {
+    "description": "Auto imported from /components/dialog/InstantLoginDialog.vue"
+  },
+  "InviteUser": {
+    "description": "Auto imported from /components/dialog/InviteUser.vue"
+  },
+  "LazyInviteUser": {
+    "description": "Auto imported from /components/dialog/InviteUser.vue"
+  },
+  "MembersDialog": {
+    "description": "Auto imported from /components/dialog/MembersDialog.vue"
+  },
+  "LazyMembersDialog": {
+    "description": "Auto imported from /components/dialog/MembersDialog.vue"
+  },
+  "SharedCardSizeDialog": {
+    "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
+  },
+  "LazySharedCardSizeDialog": {
+    "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
   },
   "AppBar": {
     "description": "Auto imported from /components/layouts/AppBar.vue"
