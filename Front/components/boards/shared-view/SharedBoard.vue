@@ -47,11 +47,11 @@
   )
 </template>
 <script>
-import SharedCard from '~/components/boards/shared-view/SharedCard'
-import SharedBoardOverview from '~/components/boards/shared-view/SharedBoardOverview'
-import SharedCardsTool from '~/components/boards/shared-view/SharedCardsTool'
-import SharedCardsField from '~/components/boards/shared-view/SharedCardsField'
-import Const from '~/libs/const'
+import SharedCard from "~/components/boards/shared-view/SharedCard";
+import SharedBoardOverview from "~/components/boards/shared-view/SharedBoardOverview";
+import SharedCardsTool from "~/components/boards/shared-view/SharedCardsTool";
+import SharedCardsField from "~/components/boards/shared-view/SharedCardsField";
+import Const from "~/libs/const";
 
 export default {
   components: {
@@ -64,14 +64,14 @@ export default {
     boardInfo: {
       type: Object,
       default: () => {
-        return {}
+        return {};
       },
     },
     boardSize: {
       type: Object,
       require: true,
       default: () => {
-        return { width: 0, height: 0 }
+        return { width: 0, height: 0 };
       },
     },
     editable: {
@@ -81,7 +81,7 @@ export default {
     mode: {
       type: String,
       require: true,
-      default: '',
+      default: "",
     },
     sharedItems: {
       type: Array,
@@ -92,7 +92,7 @@ export default {
       type: Object,
       require: true,
       default: () => {
-        return { x: 0.0, y: 0.0, scale: 1.0 }
+        return { x: 0.0, y: 0.0, scale: 1.0 };
       },
     },
     dragin: {
@@ -103,7 +103,7 @@ export default {
       type: Array,
       require: true,
       default: () => {
-        return []
+        return [];
       },
     },
   },
@@ -115,84 +115,84 @@ export default {
       isEditNow: false,
       opacity: 0,
       role: Const.ROLE_VIEWER,
-    }
+    };
   },
   computed: {
     modeClass() {
-      if (this.mode === 'drag') {
-        return this.isClickNow ? 'grabbing-cursor' : 'hand-cursor'
+      if (this.mode === "drag") {
+        return this.isClickNow ? "grabbing-cursor" : "hand-cursor";
       }
-      return ''
+      return "";
     },
   },
   methods: {
     setMouseEnter(mouse) {
-      this.$emit('mouseenter', mouse)
+      this.$emit("mouseenter", mouse);
     },
     onItemChanged(item) {
-      this.$emit('item-changed', item)
+      this.$emit("item-changed", item);
     },
     onSelectedChanged(selectedItems) {
-      this.$emit('selected-changed', selectedItems)
+      this.$emit("selected-changed", selectedItems);
     },
     onScroll(e) {
-      e.preventDefault()
-      const transform = _.cloneDeep(this.transform)
+      e.preventDefault();
+      const transform = _.cloneDeep(this.transform);
       if (e.ctrlKey) {
-        transform.scale = transform.scale - e.deltaY * 0.005
+        transform.scale = transform.scale - e.deltaY * 0.005;
       } else {
         transform.x =
-          this.transform.x + (e.wheelDeltaX * 0.5) / this.transform.scale
+          this.transform.x + (e.wheelDeltaX * 0.5) / this.transform.scale;
         transform.y =
-          this.transform.y + (e.wheelDeltaY * 0.5) / this.transform.scale
+          this.transform.y + (e.wheelDeltaY * 0.5) / this.transform.scale;
       }
-      this.changeTransform(transform)
+      this.changeTransform(transform);
     },
     onDrag(e) {
-      const transform = _.cloneDeep(this.transform)
-      if (this.mode === 'drag' && this.isClickNow) {
-        transform.x = this.transform.x + e.movementX / this.transform.scale
-        transform.y = this.transform.y + e.movementY / this.transform.scale
+      const transform = _.cloneDeep(this.transform);
+      if (this.mode === "drag" && this.isClickNow) {
+        transform.x = this.transform.x + e.movementX / this.transform.scale;
+        transform.y = this.transform.y + e.movementY / this.transform.scale;
       }
-      this.changeTransform(transform)
+      this.changeTransform(transform);
     },
     changeTransform(transform) {
-      this.$emit('transform-changed', transform)
+      this.$emit("transform-changed", transform);
     },
     onMouseOver(e) {
-      this.setMouseEnter(true)
+      this.setMouseEnter(true);
     },
     onMouseLeave(e) {
-      this.setMouseEnter(false)
+      this.setMouseEnter(false);
     },
     onSelectedItemsParamsChanged(param) {
-      const newItems = []
+      const newItems = [];
       for (let i = 0; i < this.selectedItems.length; i++) {
-        const id = this.selectedItems[i]
-        newItems.push(_.assign({ id }, param))
+        const id = this.selectedItems[i];
+        newItems.push(_.assign({ id }, param));
       }
-      this.onSelectedItemsChanged(newItems)
+      this.onSelectedItemsChanged(newItems);
     },
     onSelectedItemsChanged(newItems) {
-      this.$emit('items-changed', newItems)
+      this.$emit("items-changed", newItems);
     },
     removeSelectedItems() {
-      this.$emit('remove-selected-items')
+      this.$emit("remove-selected-items");
     },
     getItemById(id) {
-      return this.sharedItems.find((item) => item.id === id)
+      return this.sharedItems.find((item) => item.id === id);
     },
     cloneItemById(id) {
-      return _.cloneDeep(this.sharedItems.find((item) => item.id === id))
+      return _.cloneDeep(this.sharedItems.find((item) => item.id === id));
     },
     setDragNow(drag) {
-      this.isDragNow = drag
+      this.isDragNow = drag;
     },
     editCard(edit) {
-      this.isEditNow = edit
+      this.isEditNow = edit;
     },
   },
-}
+};
 </script>
 <style>
 .moveable-control.moveable-origin {
