@@ -1,8 +1,5 @@
 <template lang="pug">
-v-app-bar(app clipped-left color="primary" dense :style="`z-index:${$const.zIndex.mainMenuBar}`")
-  v-toolbar-title
-    a(@click="linkTo('/')")
-      img(src="~/assets/images/TechUni-menu-logo.png" height="65")
+v-app-bar(app height="80" color="white" :style="`z-index:${$const.zIndex.mainMenuBar}`")
   v-spacer
   v-menu(:z-index="$const.zIndex.sharedCardMenuBar" offset-y)
     template(v-slot:activator="{ on: menu, attrs }")

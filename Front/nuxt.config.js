@@ -160,6 +160,7 @@ export default {
   loading: "~/components/common/Loading.vue",
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
+    treeShake: true,
     theme: {
       dark: false,
       themes: {

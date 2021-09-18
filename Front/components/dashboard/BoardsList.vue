@@ -23,18 +23,18 @@ div
             h5.datePosition 作成日時 {{item.created_at|moment}}
 </template>
 <script>
-import utils from '~/libs/utils'
+import utils from "~/libs/utils";
 export default {
   filters: {
     moment(date) {
-      return utils.dateToJapanese(date)
+      return utils.dateToJapanese(date);
     },
   },
   props: {
     boards: {
       type: Object,
       default: () => {
-        return {}
+        return {};
       },
     },
   },
@@ -42,10 +42,10 @@ export default {
   mounted() {},
   methods: {
     selectBoard(board) {
-      this.$emit('select-board', board)
+      this.$emit("select-board", board);
     },
   },
-}
+};
 </script>
 
 <style>
@@ -62,5 +62,7 @@ export default {
 }
 .nameStyle {
   font-weight: bold;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 </style>
