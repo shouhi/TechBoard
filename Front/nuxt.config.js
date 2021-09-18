@@ -113,10 +113,10 @@ export default {
       {
         filename:
           process.env.NODE_ENV === "production"
-            ? "./config/.env"
+            ? "./config/.env.prod"
             : process.env.NODE_ENV === "staging"
-            ? "./config/.env"
-            : "./config/.env",
+            ? "./config/.env.dev"
+            : "./config/.env.dev",
       },
     ],
     "@nuxtjs/vuetify",

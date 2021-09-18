@@ -1,15 +1,9 @@
 {
-  "BoardAppBar": {
-    "description": "Auto imported from /components/boards/BoardAppBar.vue"
+  "BoardsList": {
+    "description": "Auto imported from /components/dashboard/BoardsList.vue"
   },
-  "LazyBoardAppBar": {
-    "description": "Auto imported from /components/boards/BoardAppBar.vue"
-  },
-  "BoardMenuBar": {
-    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
-  },
-  "LazyBoardMenuBar": {
-    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
+  "LazyBoardsList": {
+    "description": "Auto imported from /components/dashboard/BoardsList.vue"
   },
   "CreateBoardDialog": {
     "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
@@ -65,12 +59,6 @@
   "LazySharedCardSizeDialog": {
     "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
   },
-  "BoardsList": {
-    "description": "Auto imported from /components/dashboard/BoardsList.vue"
-  },
-  "LazyBoardsList": {
-    "description": "Auto imported from /components/dashboard/BoardsList.vue"
-  },
   "ColorSelect": {
     "description": "Auto imported from /components/common/ColorSelect.vue"
   },
@@ -112,6 +100,18 @@
   },
   "LazyFontColorSelect": {
     "description": "Auto imported from /components/common/fontColorSelect.vue"
+  },
+  "BoardAppBar": {
+    "description": "Auto imported from /components/boards/BoardAppBar.vue"
+  },
+  "LazyBoardAppBar": {
+    "description": "Auto imported from /components/boards/BoardAppBar.vue"
+  },
+  "BoardMenuBar": {
+    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
+  },
+  "LazyBoardMenuBar": {
+    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
   },
   "AppBar": {
     "description": "Auto imported from /components/layouts/AppBar.vue"
