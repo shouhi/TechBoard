@@ -1,4 +1,16 @@
 {
+  "BoardAppBar": {
+    "description": "Auto imported from /components/boards/BoardAppBar.vue"
+  },
+  "LazyBoardAppBar": {
+    "description": "Auto imported from /components/boards/BoardAppBar.vue"
+  },
+  "BoardMenuBar": {
+    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
+  },
+  "LazyBoardMenuBar": {
+    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
+  },
   "BoardsList": {
     "description": "Auto imported from /components/dashboard/BoardsList.vue"
   },
@@ -46,18 +58,6 @@
   },
   "LazyFontColorSelect": {
     "description": "Auto imported from /components/common/fontColorSelect.vue"
-  },
-  "BoardAppBar": {
-    "description": "Auto imported from /components/boards/BoardAppBar.vue"
-  },
-  "LazyBoardAppBar": {
-    "description": "Auto imported from /components/boards/BoardAppBar.vue"
-  },
-  "BoardMenuBar": {
-    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
-  },
-  "LazyBoardMenuBar": {
-    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
   },
   "CreateBoardDialog": {
     "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
@@ -113,6 +113,12 @@
   "LazySharedCardSizeDialog": {
     "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
   },
+  "AppBar": {
+    "description": "Auto imported from /components/layouts/AppBar.vue"
+  },
+  "LazyAppBar": {
+    "description": "Auto imported from /components/layouts/AppBar.vue"
+  },
   "AppealCard": {
     "description": "Auto imported from /components/top/AppealCard.vue"
   },
@@ -136,12 +142,6 @@
   },
   "LazyStepCard": {
     "description": "Auto imported from /components/top/StepCard.vue"
-  },
-  "AppBar": {
-    "description": "Auto imported from /components/layouts/AppBar.vue"
-  },
-  "LazyAppBar": {
-    "description": "Auto imported from /components/layouts/AppBar.vue"
   },
   "SharedBoard": {
     "description": "Auto imported from /components/boards/shared-view/SharedBoard.vue"

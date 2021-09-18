@@ -4,7 +4,7 @@
           v-card(height='400' width="600px" class="mx-auto mt-5")
                 v-row
                   v-col(cols="12").text-center
-                    img(src="~/assets/images/Squeese-menu-logo.png" height="80" width="160")
+                    img(src="~/assets/images/TechUni-menu-logo.png" height="80" width="160")
                     v-spacer
                     v-btn(@click="instantLoginDialog=true" color="primary" width="230" class="white--text font-weight-bold") ボードに参加する
                     v-spacer
