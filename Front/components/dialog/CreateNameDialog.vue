@@ -1,7 +1,7 @@
 <template lang="pug">
 v-dialog(v-model='dialog', max-width="550",persistent )
   v-card.create-name-dialog-style
-    h1 Squeeseへようこそ🎉
+    h1 Tech.Boardへようこそ🎉
     h3 まずは、名前を入力しましょう！
       v-spacer
     v-text-field.field-position(v-model='name', label='名前を入れてください' outlined)

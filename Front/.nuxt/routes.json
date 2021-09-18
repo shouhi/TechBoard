@@ -3,63 +3,54 @@
     "name": "dashboard",
     "path": "/dashboard",
     "component": "/Users/ideshouhi/Tech.Uni/TechBoard/Front/pages/dashboard/index.vue",
-    "chunkName": "pages/dashboard/index",
-    "_name": "_e5c3fd9e"
+    "chunkName": "pages/dashboard/index"
   },
   {
     "name": "instant-login",
     "path": "/instant-login",
     "component": "/Users/ideshouhi/Tech.Uni/TechBoard/Front/pages/instant-login/index.vue",
-    "chunkName": "pages/instant-login/index",
-    "_name": "_bb061a4c"
+    "chunkName": "pages/instant-login/index"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "/Users/ideshouhi/Tech.Uni/TechBoard/Front/pages/login/index.vue",
-    "chunkName": "pages/login/index",
-    "_name": "_700150c6"
+    "chunkName": "pages/login/index"
   },
   {
     "name": "signup",
     "path": "/signup",
     "component": "/Users/ideshouhi/Tech.Uni/TechBoard/Front/pages/signup/index.vue",
-    "chunkName": "pages/signup/index",
-    "_name": "_6821be1e"
+    "chunkName": "pages/signup/index"
   },
   {
     "name": "test",
     "path": "/test",
     "component": "/Users/ideshouhi/Tech.Uni/TechBoard/Front/pages/test/index.vue",
-    "chunkName": "pages/test/index",
-    "_name": "_6680092a"
+    "chunkName": "pages/test/index"
   },
   {
     "name": "users-me",
     "path": "/users/me",
     "component": "/Users/ideshouhi/Tech.Uni/TechBoard/Front/pages/users/me.vue",
-    "chunkName": "pages/users/me",
-    "_name": "_c0eef856"
+    "chunkName": "pages/users/me"
   },
   {
     "name": "boards-id",
     "path": "/boards/:id?",
     "component": "/Users/ideshouhi/Tech.Uni/TechBoard/Front/pages/boards/_id.vue",
-    "chunkName": "pages/boards/_id",
-    "_name": "_52b023ce"
+    "chunkName": "pages/boards/_id"
   },
   {
     "name": "boards-boardId-invites-id",
     "path": "/boards/:boardId?/invites/:id?",
     "component": "/Users/ideshouhi/Tech.Uni/TechBoard/Front/pages/boards/_boardId/invites/_id.vue",
-    "chunkName": "pages/boards/_boardId/invites/_id",
-    "_name": "_697b65b8"
+    "chunkName": "pages/boards/_boardId/invites/_id"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/ideshouhi/Tech.Uni/TechBoard/Front/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_6376d56c"
+    "chunkName": "pages/index"
   }
 ]

@@ -166,7 +166,7 @@ export default {
       // TODO
       // 招待URLのメール
       const text = `${this.inviteUrl}`;
-      const subject = "Squeeseからの招待";
+      const subject = "Tech.Boardからの招待";
       this.$emit("send-email", { emailList, text, subject });
     },
 
