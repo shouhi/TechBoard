@@ -1,63 +1,9 @@
 {
-  "BoardAppBar": {
-    "description": "Auto imported from /components/boards/BoardAppBar.vue"
-  },
-  "LazyBoardAppBar": {
-    "description": "Auto imported from /components/boards/BoardAppBar.vue"
-  },
-  "BoardMenuBar": {
-    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
-  },
-  "LazyBoardMenuBar": {
-    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
-  },
   "BoardsList": {
     "description": "Auto imported from /components/dashboard/BoardsList.vue"
   },
   "LazyBoardsList": {
     "description": "Auto imported from /components/dashboard/BoardsList.vue"
-  },
-  "ColorSelect": {
-    "description": "Auto imported from /components/common/ColorSelect.vue"
-  },
-  "LazyColorSelect": {
-    "description": "Auto imported from /components/common/ColorSelect.vue"
-  },
-  "ConfirmationDialog": {
-    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
-  },
-  "LazyConfirmationDialog": {
-    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
-  },
-  "ContextMenu": {
-    "description": "Auto imported from /components/common/ContextMenu.vue"
-  },
-  "LazyContextMenu": {
-    "description": "Auto imported from /components/common/ContextMenu.vue"
-  },
-  "Loading": {
-    "description": "Auto imported from /components/common/Loading.vue"
-  },
-  "LazyLoading": {
-    "description": "Auto imported from /components/common/Loading.vue"
-  },
-  "ShortcutButtons": {
-    "description": "Auto imported from /components/common/ShortcutButtons.vue"
-  },
-  "LazyShortcutButtons": {
-    "description": "Auto imported from /components/common/ShortcutButtons.vue"
-  },
-  "SnackBar": {
-    "description": "Auto imported from /components/common/SnackBar.vue"
-  },
-  "LazySnackBar": {
-    "description": "Auto imported from /components/common/SnackBar.vue"
-  },
-  "FontColorSelect": {
-    "description": "Auto imported from /components/common/fontColorSelect.vue"
-  },
-  "LazyFontColorSelect": {
-    "description": "Auto imported from /components/common/fontColorSelect.vue"
   },
   "CreateBoardDialog": {
     "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
@@ -112,6 +58,60 @@
   },
   "LazySharedCardSizeDialog": {
     "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
+  },
+  "BoardAppBar": {
+    "description": "Auto imported from /components/boards/BoardAppBar.vue"
+  },
+  "LazyBoardAppBar": {
+    "description": "Auto imported from /components/boards/BoardAppBar.vue"
+  },
+  "BoardMenuBar": {
+    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
+  },
+  "LazyBoardMenuBar": {
+    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
+  },
+  "ColorSelect": {
+    "description": "Auto imported from /components/common/ColorSelect.vue"
+  },
+  "LazyColorSelect": {
+    "description": "Auto imported from /components/common/ColorSelect.vue"
+  },
+  "ConfirmationDialog": {
+    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
+  },
+  "LazyConfirmationDialog": {
+    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
+  },
+  "ContextMenu": {
+    "description": "Auto imported from /components/common/ContextMenu.vue"
+  },
+  "LazyContextMenu": {
+    "description": "Auto imported from /components/common/ContextMenu.vue"
+  },
+  "Loading": {
+    "description": "Auto imported from /components/common/Loading.vue"
+  },
+  "LazyLoading": {
+    "description": "Auto imported from /components/common/Loading.vue"
+  },
+  "ShortcutButtons": {
+    "description": "Auto imported from /components/common/ShortcutButtons.vue"
+  },
+  "LazyShortcutButtons": {
+    "description": "Auto imported from /components/common/ShortcutButtons.vue"
+  },
+  "SnackBar": {
+    "description": "Auto imported from /components/common/SnackBar.vue"
+  },
+  "LazySnackBar": {
+    "description": "Auto imported from /components/common/SnackBar.vue"
+  },
+  "FontColorSelect": {
+    "description": "Auto imported from /components/common/fontColorSelect.vue"
+  },
+  "LazyFontColorSelect": {
+    "description": "Auto imported from /components/common/fontColorSelect.vue"
   },
   "AppBar": {
     "description": "Auto imported from /components/layouts/AppBar.vue"
