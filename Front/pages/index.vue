@@ -14,8 +14,7 @@ v-app
     )
       v-col.text-center(cols="12" md="8")
         v-col.text-center(:class="$vuetify.breakpoint.mdAndUp ? 'catchcopy' : 'catchcopy-sp'")
-          p 『アイディアをカタチに
-          p 　　　　　　　　　まだないアイディアを』
+          p 『アイディアをカタチに』
           v-img(:src="require('~/assets/images/Squeese-menu-logo.png')" contain height="200")
           h4.subtitle-1.black--text リモート会議サポートツール
         v-col.text-center()
