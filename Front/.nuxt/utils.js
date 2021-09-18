@@ -169,7 +169,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"FIREBASE_API_KEY":"AIzaSyC1nBxRsfG0fm9liaYP83JAPWVBivX5HpI","FIREBASE_AUTH_DOMAIN":"techboard-8da46.firebaseapp.com","FIREBASE_PROJECT_ID":"techboard-8da46","FIREBASE_STORAGE_BUCKET":"techboard-8da46.appspot.com","FIREBASE_MESSAGING_SENDER_ID":"994221999028","FIREBASE_APP_ID":"1:994221999028:web:a326eabc7e20e243b768e1","FIREBASE_MEASUREMENT_ID":"G-M8HZQ160NR","API_HOST":"https://enigmatic-oasis-18515.herokuapp.com","FRONT_HOST":"tech-board-tau.vercel.app"}
+      env: {"FIREBASE_API_KEY":"AIzaSyC1nBxRsfG0fm9liaYP83JAPWVBivX5HpI","FIREBASE_AUTH_DOMAIN":"techboard-8da46.firebaseapp.com","FIREBASE_PROJECT_ID":"techboard-8da46","FIREBASE_STORAGE_BUCKET":"techboard-8da46.appspot.com","FIREBASE_MESSAGING_SENDER_ID":"994221999028","FIREBASE_APP_ID":"1:994221999028:web:a326eabc7e20e243b768e1","FIREBASE_MEASUREMENT_ID":"G-M8HZQ160NR","API_HOST":"https://salty-tor-23452.herokuapp.com","FRONT_HOST":"https://tech-board-tau.vercel.app"}
     }
     // Only set once
     if (!process.static && context.req) {

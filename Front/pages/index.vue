@@ -20,19 +20,94 @@ v-app
           :src='require("~/assets/images/device.png")'
           height="300"
         )
+    Section(color="#ffffff")
+      h2.display-1.font-weight-bold() Tech.Uni とは、、、？？
+      v-img(:src="require('~/assets/images/TechUni.gif')")
+    Section(color="#9cbfbc")
+      h2.display-1.font-weight-bold.white--text 誰でも歓迎！完全カリキュラム制
+      v-img(:src="require('~/assets/images/curriculum.png')")
+    Section(color="#ffffff")
+      h2.display-1.font-weight-bold 実践的なチーム開発も！
+      v-row
+        step-card(
+          v-for="(step, key) in steps" :key="key"
+          :value="step"
+          :num="key"
+        )
 </template>
 <script>
+import Section from "~/components/top/Section";
+import StepCard from "~/components/top/StepCard";
 export default {
+  components: {
+    Section,
+    StepCard,
+  },
   layout: "simple-layout",
   data() {
     return {
       message: "",
       scrollY: "",
+      steps: [
+        {
+          title: "Githubを活用",
+          description:
+            "GitFlowなどのブランチモデルも導入し、実務に近い環境でチーム開発も行っています！",
+          image: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+        },
+        {
+          title: "アジャイル開発",
+          description:
+            "開発スタイルは主にアジャイル開発を取り入れています。デイリースクラム・レトロスペクティブ・スプリントレビューと各イベント毎にみんなで集まりMTGも開催",
+          image: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+        },
+        {
+          title: "オンラインでも！",
+          description:
+            "オンラインコワーキングスペースのCLOTOと提携しTech.Uni独自でオンラインの活動を実現化しています",
+          image: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+        },
+      ],
+      pricing: [
+        {
+          title: "フリープラン",
+          subtitle: "全ての機能が使えます",
+          price: "無料",
+          color: "orange",
+          features: [
+            "すべてのボード機能",
+            "すべてのチーム機能",
+            "24時間以内の閲覧・編集",
+          ],
+        },
+        {
+          title: "個人プラン",
+          subtitle: "無制限の閲覧・編集",
+          price: "1,300円/月",
+          color: "blue",
+          features: [
+            "すべてのボード機能",
+            "すべてのチーム機能",
+            "無制限の閲覧・編集",
+          ],
+        },
+        {
+          title: "チームプラン",
+          subtitle: "無制限の閲覧・編集",
+          price: "3,000円/月",
+          color: "green",
+          features: [
+            "すべてのボード機能",
+            "すべてのチーム機能",
+            "無制限の閲覧・編集",
+          ],
+        },
+      ],
     };
   },
   computed: {
     appBarColor() {
-      return this.scrollY < 50 ? "#9cbfbc " : "#c2ede8 ";
+      return this.scrollY < 50 ? "#9cbfbc " : "#00000000 ";
     },
   },
   mounted() {
