@@ -1,0 +1,46 @@
+{
+  "name": "kaite-front-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build && nuxt export",
+    "start": "nuxt start",
+    "test": "jest",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:js-fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "yarn lint:js-fix"
+  },
+  "dependencies": {
+    "@daybrush/drag": "^0.19.3",
+    "@nuxtjs/axios": "^5.12.0",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.6.0",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.16.0",
+    "moment": "^2.27.0",
+    "moveable": "^0.18.5",
+    "nuxt": "^2.14.0",
+    "sanitize-html": "^1.27.2",
+    "selecto": "^1.5.2",
+    "vue-clipboard2": "^0.3.1",
+    "vue-shortkey": "^3.1.7",
+    "vuedraggable": "^2.24.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.0",
+    "pug": "^3.0.0",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.0.0"
+  }
+}

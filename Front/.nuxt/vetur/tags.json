@@ -1,0 +1,200 @@
+{
+  "BoardsList": {
+    "description": "Auto imported from /components/dashboard/BoardsList.vue"
+  },
+  "LazyBoardsList": {
+    "description": "Auto imported from /components/dashboard/BoardsList.vue"
+  },
+  "ColorSelect": {
+    "description": "Auto imported from /components/common/ColorSelect.vue"
+  },
+  "LazyColorSelect": {
+    "description": "Auto imported from /components/common/ColorSelect.vue"
+  },
+  "ConfirmationDialog": {
+    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
+  },
+  "LazyConfirmationDialog": {
+    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
+  },
+  "ContextMenu": {
+    "description": "Auto imported from /components/common/ContextMenu.vue"
+  },
+  "LazyContextMenu": {
+    "description": "Auto imported from /components/common/ContextMenu.vue"
+  },
+  "Loading": {
+    "description": "Auto imported from /components/common/Loading.vue"
+  },
+  "LazyLoading": {
+    "description": "Auto imported from /components/common/Loading.vue"
+  },
+  "ShortcutButtons": {
+    "description": "Auto imported from /components/common/ShortcutButtons.vue"
+  },
+  "LazyShortcutButtons": {
+    "description": "Auto imported from /components/common/ShortcutButtons.vue"
+  },
+  "SnackBar": {
+    "description": "Auto imported from /components/common/SnackBar.vue"
+  },
+  "LazySnackBar": {
+    "description": "Auto imported from /components/common/SnackBar.vue"
+  },
+  "FontColorSelect": {
+    "description": "Auto imported from /components/common/fontColorSelect.vue"
+  },
+  "LazyFontColorSelect": {
+    "description": "Auto imported from /components/common/fontColorSelect.vue"
+  },
+  "CreateBoardDialog": {
+    "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
+  },
+  "LazyCreateBoardDialog": {
+    "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
+  },
+  "CreateNameDialog": {
+    "description": "Auto imported from /components/dialog/CreateNameDialog.vue"
+  },
+  "LazyCreateNameDialog": {
+    "description": "Auto imported from /components/dialog/CreateNameDialog.vue"
+  },
+  "EditBoardDialog": {
+    "description": "Auto imported from /components/dialog/EditBoardDialog.vue"
+  },
+  "LazyEditBoardDialog": {
+    "description": "Auto imported from /components/dialog/EditBoardDialog.vue"
+  },
+  "EditSharedCardDialog": {
+    "description": "Auto imported from /components/dialog/EditSharedCardDialog.vue"
+  },
+  "LazyEditSharedCardDialog": {
+    "description": "Auto imported from /components/dialog/EditSharedCardDialog.vue"
+  },
+  "EmailListDialog": {
+    "description": "Auto imported from /components/dialog/EmailListDialog.vue"
+  },
+  "LazyEmailListDialog": {
+    "description": "Auto imported from /components/dialog/EmailListDialog.vue"
+  },
+  "InstantLoginDialog": {
+    "description": "Auto imported from /components/dialog/InstantLoginDialog.vue"
+  },
+  "LazyInstantLoginDialog": {
+    "description": "Auto imported from /components/dialog/InstantLoginDialog.vue"
+  },
+  "InviteUser": {
+    "description": "Auto imported from /components/dialog/InviteUser.vue"
+  },
+  "LazyInviteUser": {
+    "description": "Auto imported from /components/dialog/InviteUser.vue"
+  },
+  "MembersDialog": {
+    "description": "Auto imported from /components/dialog/MembersDialog.vue"
+  },
+  "LazyMembersDialog": {
+    "description": "Auto imported from /components/dialog/MembersDialog.vue"
+  },
+  "SharedCardSizeDialog": {
+    "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
+  },
+  "LazySharedCardSizeDialog": {
+    "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
+  },
+  "AppBar": {
+    "description": "Auto imported from /components/layouts/AppBar.vue"
+  },
+  "LazyAppBar": {
+    "description": "Auto imported from /components/layouts/AppBar.vue"
+  },
+  "BoardAppBar": {
+    "description": "Auto imported from /components/boards/BoardAppBar.vue"
+  },
+  "LazyBoardAppBar": {
+    "description": "Auto imported from /components/boards/BoardAppBar.vue"
+  },
+  "BoardMenuBar": {
+    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
+  },
+  "LazyBoardMenuBar": {
+    "description": "Auto imported from /components/boards/BoardMenuBar.vue"
+  },
+  "AppealCard": {
+    "description": "Auto imported from /components/top/AppealCard.vue"
+  },
+  "LazyAppealCard": {
+    "description": "Auto imported from /components/top/AppealCard.vue"
+  },
+  "PricingCard": {
+    "description": "Auto imported from /components/top/PricingCard.vue"
+  },
+  "LazyPricingCard": {
+    "description": "Auto imported from /components/top/PricingCard.vue"
+  },
+  "Section": {
+    "description": "Auto imported from /components/top/Section.vue"
+  },
+  "LazySection": {
+    "description": "Auto imported from /components/top/Section.vue"
+  },
+  "StepCard": {
+    "description": "Auto imported from /components/top/StepCard.vue"
+  },
+  "LazyStepCard": {
+    "description": "Auto imported from /components/top/StepCard.vue"
+  },
+  "StockCard": {
+    "description": "Auto imported from /components/boards/stock-view/StockCard.vue"
+  },
+  "LazyStockCard": {
+    "description": "Auto imported from /components/boards/stock-view/StockCard.vue"
+  },
+  "StockMenuBar": {
+    "description": "Auto imported from /components/boards/stock-view/StockMenuBar.vue"
+  },
+  "LazyStockMenuBar": {
+    "description": "Auto imported from /components/boards/stock-view/StockMenuBar.vue"
+  },
+  "StockView": {
+    "description": "Auto imported from /components/boards/stock-view/StockView.vue"
+  },
+  "LazyStockView": {
+    "description": "Auto imported from /components/boards/stock-view/StockView.vue"
+  },
+  "SharedBoard": {
+    "description": "Auto imported from /components/boards/shared-view/SharedBoard.vue"
+  },
+  "LazySharedBoard": {
+    "description": "Auto imported from /components/boards/shared-view/SharedBoard.vue"
+  },
+  "SharedBoardOverview": {
+    "description": "Auto imported from /components/boards/shared-view/SharedBoardOverview.vue"
+  },
+  "LazySharedBoardOverview": {
+    "description": "Auto imported from /components/boards/shared-view/SharedBoardOverview.vue"
+  },
+  "SharedCard": {
+    "description": "Auto imported from /components/boards/shared-view/SharedCard.vue"
+  },
+  "LazySharedCard": {
+    "description": "Auto imported from /components/boards/shared-view/SharedCard.vue"
+  },
+  "SharedCardMenuBar": {
+    "description": "Auto imported from /components/boards/shared-view/SharedCardMenuBar.vue"
+  },
+  "LazySharedCardMenuBar": {
+    "description": "Auto imported from /components/boards/shared-view/SharedCardMenuBar.vue"
+  },
+  "SharedCardsField": {
+    "description": "Auto imported from /components/boards/shared-view/SharedCardsField.vue"
+  },
+  "LazySharedCardsField": {
+    "description": "Auto imported from /components/boards/shared-view/SharedCardsField.vue"
+  },
+  "SharedCardsTool": {
+    "description": "Auto imported from /components/boards/shared-view/SharedCardsTool.vue"
+  },
+  "LazySharedCardsTool": {
+    "description": "Auto imported from /components/boards/shared-view/SharedCardsTool.vue"
+  }
+}
