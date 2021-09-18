@@ -39,10 +39,10 @@ export default {
         const user = await utils.getUser();
         if (user) {
           // ログインしていたときの処理
-          utils.setupUser(user, this.$axios, this.$store);
+          await utils.setupUser(user, this.$axios, this.$store);
           // ログイン成功
           await this.$store.dispatch("user/updateMe", { name });
-          this.$router.push(`${this.nexturl}`);
+          await this.$router.push(`${this.nexturl}`);
         }
       });
     },
