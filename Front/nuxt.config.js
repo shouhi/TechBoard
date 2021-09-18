@@ -22,7 +22,7 @@ export default {
       lang: "ja",
       prefix: "og: http://ogp.me/ns#",
     },
-    title: "Squeese | リモート会議サポートツール",
+    title: "Tech.Board | 技育展",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -30,36 +30,42 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "「Squeese」は付箋をオンラインでリアルタイムで共有する、オンライン会議サポートツールです。パソコンのWebブラウザを使用し、会議でのアイディア出しや、日々のTODOリストの管理など、クリエイティブな業務をサポートします。",
+          "「Tech.Board」はTech.Uni発祥のオンラインホワイトボードwebアプリです。技育展2021で登壇しました！コロナ禍で対面による団体会議などができなくなった大学生及び社会人のためのアプリです！！#Tech.Uniでみんなツイートしよう！！強強エンジニアになれます。",
       },
       { hid: "og:locale", property: "og:locale", content: "ja_JP" },
       {
         hid: "og:site_name",
         property: "og:site_name",
-        content: "Squeese | リモート会議サポートツール",
+        content: "Tech.Board | 技育展",
       },
       { hid: "og:type", property: "og:type", content: "website" },
-      { hid: "og:url", property: "og:url", content: "https://kaite.team" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://tech-board-tau.vercel.app",
+      },
       {
         hid: "og:title",
         property: "og:title",
-        content: "Squeese | リモート会議サポートツール",
+        content: "Tech.Board | 技育展",
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "「Squeese」は付箋をオンラインでリアルタイムで共有する、オンライン会議サポートツールです。パソコンのWebブラウザを使用し、会議でのアイディア出しや、日々のTODOリストの管理など、クリエイティブな業務をサポートします。",
+          "「Tech.Board」はTech.Uni発祥のオンラインホワイトボードwebアプリです。技育展2021で登壇しました！コロナ禍で対面による団体会議などができなくなった大学生及び社会人のためのアプリです！！#Tech.Uniでみんなツイートしよう！！強強エンジニアになれます。",
       },
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://kaite.team/ogp.png",
+        content:
+          "https://firebasestorage.googleapis.com/v0/b/techboard-8da46.appspot.com/o/ogp.jpg?alt=media&token=2a83bafe-f72b-4bc7-a844-9ca03bb68204",
       },
       {
         hid: "og:image:secure_url",
         property: "og:image:secure_url",
-        content: "https://kaite.team/ogp.png",
+        content:
+          "https://firebasestorage.googleapis.com/v0/b/techboard-8da46.appspot.com/o/ogp.jpg?alt=media&token=2a83bafe-f72b-4bc7-a844-9ca03bb68204",
       },
       {
         hid: "og:image:width",
@@ -73,19 +79,20 @@ export default {
       },
       {
         name: "twitter:image",
-        content: "https://kaite.team/ogp.png",
+        content:
+          "https://firebasestorage.googleapis.com/v0/b/techboard-8da46.appspot.com/o/ogp.jpg?alt=media&token=2a83bafe-f72b-4bc7-a844-9ca03bb68204",
       },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@prog_ac" },
+      { name: "twitter:site", content: "@TechUni1026" },
       { name: "twitter:creator", content: "@smarthr_jp" },
       {
         name: "twitter:title",
-        content: "Squeese | リモート会議サポートツール",
+        content: "Tech.Board | 技育展",
       },
       {
         name: "twitter:description",
         content:
-          "「Squeese」は付箋をオンラインでリアルタイムで共有する、オンライン会議サポートツールです。パソコンのWebブラウザを使用し、会議でのアイディア出しや、日々のTODOリストの管理など、クリエイティブな業務をサポートします。",
+          "「Tech.Board」はTech.Uni発祥のオンラインホワイトボードwebアプリです。技育展2021で登壇しました！コロナ禍で対面による団体会議などができなくなった大学生及び社会人のためのアプリです！！#Tech.Uniでみんなツイートしよう！！強強エンジニアになれます。",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

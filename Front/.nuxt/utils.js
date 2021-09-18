@@ -162,14 +162,14 @@ export async function setContext (app, context) {
   if (!app.context) {
     app.context = {
       isStatic: process.static,
-      isDev: false,
+      isDev: true,
       isHMR: false,
       app,
       store: app.store,
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"FIREBASE_API_KEY":"AIzaSyC1nBxRsfG0fm9liaYP83JAPWVBivX5HpI","FIREBASE_AUTH_DOMAIN":"techboard-8da46.firebaseapp.com","FIREBASE_PROJECT_ID":"techboard-8da46","FIREBASE_STORAGE_BUCKET":"techboard-8da46.appspot.com","FIREBASE_MESSAGING_SENDER_ID":"994221999028","FIREBASE_APP_ID":"1:994221999028:web:a326eabc7e20e243b768e1","FIREBASE_MEASUREMENT_ID":"G-M8HZQ160NR","API_HOST":"http://enigmatic-oasis-18515.herokuapp.com","FRONT_HOST":"tech-board-tau.vercel.app"}
+      env: {"FIREBASE_API_KEY":"AIzaSyC1nBxRsfG0fm9liaYP83JAPWVBivX5HpI","FIREBASE_AUTH_DOMAIN":"techboard-8da46.firebaseapp.com","FIREBASE_PROJECT_ID":"techboard-8da46","FIREBASE_STORAGE_BUCKET":"techboard-8da46.appspot.com","FIREBASE_MESSAGING_SENDER_ID":"994221999028","FIREBASE_APP_ID":"1:994221999028:web:a326eabc7e20e243b768e1","FIREBASE_MEASUREMENT_ID":"G-M8HZQ160NR","API_HOST":"https://enigmatic-oasis-18515.herokuapp.com","FRONT_HOST":"http://localhost:3000"}
     }
     // Only set once
     if (!process.static && context.req) {
@@ -246,7 +246,7 @@ export async function setContext (app, context) {
   app.context.next = context.next
   app.context._redirected = false
   app.context._errored = false
-  app.context.isHMR = false
+  app.context.isHMR = Boolean(context.isHMR)
   app.context.params = app.context.route.params || {}
   app.context.query = app.context.route.query || {}
 }
@@ -264,6 +264,9 @@ export function middlewareSeries (promises, appContext) {
 export function promisify (fn, context) {
   let promise
   if (fn.length === 2) {
+      console.warn('Callback-based asyncData, fetch or middleware calls are deprecated. ' +
+        'Please switch to promises or async/await syntax')
+
     // fn(context, callback)
     promise = new Promise((resolve) => {
       fn(context, function (err, data) {

@@ -113,12 +113,6 @@
   "LazySharedCardSizeDialog": {
     "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
   },
-  "AppBar": {
-    "description": "Auto imported from /components/layouts/AppBar.vue"
-  },
-  "LazyAppBar": {
-    "description": "Auto imported from /components/layouts/AppBar.vue"
-  },
   "AppealCard": {
     "description": "Auto imported from /components/top/AppealCard.vue"
   },
@@ -142,6 +136,12 @@
   },
   "LazyStepCard": {
     "description": "Auto imported from /components/top/StepCard.vue"
+  },
+  "AppBar": {
+    "description": "Auto imported from /components/layouts/AppBar.vue"
+  },
+  "LazyAppBar": {
+    "description": "Auto imported from /components/layouts/AppBar.vue"
   },
   "SharedBoard": {
     "description": "Auto imported from /components/boards/shared-view/SharedBoard.vue"

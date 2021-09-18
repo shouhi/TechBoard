@@ -17,11 +17,11 @@ export { default as InstantLoginDialog } from '../../components/dialog/InstantLo
 export { default as InviteUser } from '../../components/dialog/InviteUser.vue'
 export { default as MembersDialog } from '../../components/dialog/MembersDialog.vue'
 export { default as SharedCardSizeDialog } from '../../components/dialog/SharedCardSizeDialog.vue'
-export { default as AppBar } from '../../components/layouts/AppBar.vue'
 export { default as AppealCard } from '../../components/top/AppealCard.vue'
 export { default as PricingCard } from '../../components/top/PricingCard.vue'
 export { default as Section } from '../../components/top/Section.vue'
 export { default as StepCard } from '../../components/top/StepCard.vue'
+export { default as AppBar } from '../../components/layouts/AppBar.vue'
 export { default as SharedBoard } from '../../components/boards/shared-view/SharedBoard.vue'
 export { default as SharedBoardOverview } from '../../components/boards/shared-view/SharedBoardOverview.vue'
 export { default as SharedCard } from '../../components/boards/shared-view/SharedCard.vue'
@@ -51,11 +51,11 @@ export const LazyInstantLoginDialog = import('../../components/dialog/InstantLog
 export const LazyInviteUser = import('../../components/dialog/InviteUser.vue' /* webpackChunkName: "components/invite-user" */).then(c => c.default || c)
 export const LazyMembersDialog = import('../../components/dialog/MembersDialog.vue' /* webpackChunkName: "components/members-dialog" */).then(c => c.default || c)
 export const LazySharedCardSizeDialog = import('../../components/dialog/SharedCardSizeDialog.vue' /* webpackChunkName: "components/shared-card-size-dialog" */).then(c => c.default || c)
-export const LazyAppBar = import('../../components/layouts/AppBar.vue' /* webpackChunkName: "components/app-bar" */).then(c => c.default || c)
 export const LazyAppealCard = import('../../components/top/AppealCard.vue' /* webpackChunkName: "components/appeal-card" */).then(c => c.default || c)
 export const LazyPricingCard = import('../../components/top/PricingCard.vue' /* webpackChunkName: "components/pricing-card" */).then(c => c.default || c)
 export const LazySection = import('../../components/top/Section.vue' /* webpackChunkName: "components/section" */).then(c => c.default || c)
 export const LazyStepCard = import('../../components/top/StepCard.vue' /* webpackChunkName: "components/step-card" */).then(c => c.default || c)
+export const LazyAppBar = import('../../components/layouts/AppBar.vue' /* webpackChunkName: "components/app-bar" */).then(c => c.default || c)
 export const LazySharedBoard = import('../../components/boards/shared-view/SharedBoard.vue' /* webpackChunkName: "components/shared-board" */).then(c => c.default || c)
 export const LazySharedBoardOverview = import('../../components/boards/shared-view/SharedBoardOverview.vue' /* webpackChunkName: "components/shared-board-overview" */).then(c => c.default || c)
 export const LazySharedCard = import('../../components/boards/shared-view/SharedCard.vue' /* webpackChunkName: "components/shared-card" */).then(c => c.default || c)
