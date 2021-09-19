@@ -11,6 +11,48 @@
   "LazyBoardMenuBar": {
     "description": "Auto imported from /components/boards/BoardMenuBar.vue"
   },
+  "ColorSelect": {
+    "description": "Auto imported from /components/common/ColorSelect.vue"
+  },
+  "LazyColorSelect": {
+    "description": "Auto imported from /components/common/ColorSelect.vue"
+  },
+  "ConfirmationDialog": {
+    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
+  },
+  "LazyConfirmationDialog": {
+    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
+  },
+  "ContextMenu": {
+    "description": "Auto imported from /components/common/ContextMenu.vue"
+  },
+  "LazyContextMenu": {
+    "description": "Auto imported from /components/common/ContextMenu.vue"
+  },
+  "Loading": {
+    "description": "Auto imported from /components/common/Loading.vue"
+  },
+  "LazyLoading": {
+    "description": "Auto imported from /components/common/Loading.vue"
+  },
+  "ShortcutButtons": {
+    "description": "Auto imported from /components/common/ShortcutButtons.vue"
+  },
+  "LazyShortcutButtons": {
+    "description": "Auto imported from /components/common/ShortcutButtons.vue"
+  },
+  "SnackBar": {
+    "description": "Auto imported from /components/common/SnackBar.vue"
+  },
+  "LazySnackBar": {
+    "description": "Auto imported from /components/common/SnackBar.vue"
+  },
+  "FontColorSelect": {
+    "description": "Auto imported from /components/common/fontColorSelect.vue"
+  },
+  "LazyFontColorSelect": {
+    "description": "Auto imported from /components/common/fontColorSelect.vue"
+  },
   "CreateBoardDialog": {
     "description": "Auto imported from /components/dialog/CreateBoardDialog.vue"
   },
@@ -65,48 +107,6 @@
   "LazySharedCardSizeDialog": {
     "description": "Auto imported from /components/dialog/SharedCardSizeDialog.vue"
   },
-  "ColorSelect": {
-    "description": "Auto imported from /components/common/ColorSelect.vue"
-  },
-  "LazyColorSelect": {
-    "description": "Auto imported from /components/common/ColorSelect.vue"
-  },
-  "ConfirmationDialog": {
-    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
-  },
-  "LazyConfirmationDialog": {
-    "description": "Auto imported from /components/common/ConfirmationDialog.vue"
-  },
-  "ContextMenu": {
-    "description": "Auto imported from /components/common/ContextMenu.vue"
-  },
-  "LazyContextMenu": {
-    "description": "Auto imported from /components/common/ContextMenu.vue"
-  },
-  "Loading": {
-    "description": "Auto imported from /components/common/Loading.vue"
-  },
-  "LazyLoading": {
-    "description": "Auto imported from /components/common/Loading.vue"
-  },
-  "ShortcutButtons": {
-    "description": "Auto imported from /components/common/ShortcutButtons.vue"
-  },
-  "LazyShortcutButtons": {
-    "description": "Auto imported from /components/common/ShortcutButtons.vue"
-  },
-  "SnackBar": {
-    "description": "Auto imported from /components/common/SnackBar.vue"
-  },
-  "LazySnackBar": {
-    "description": "Auto imported from /components/common/SnackBar.vue"
-  },
-  "FontColorSelect": {
-    "description": "Auto imported from /components/common/fontColorSelect.vue"
-  },
-  "LazyFontColorSelect": {
-    "description": "Auto imported from /components/common/fontColorSelect.vue"
-  },
   "BoardsList": {
     "description": "Auto imported from /components/dashboard/BoardsList.vue"
   },
@@ -136,24 +136,6 @@
   },
   "LazyStepCard": {
     "description": "Auto imported from /components/top/StepCard.vue"
-  },
-  "StockCard": {
-    "description": "Auto imported from /components/boards/stock-view/StockCard.vue"
-  },
-  "LazyStockCard": {
-    "description": "Auto imported from /components/boards/stock-view/StockCard.vue"
-  },
-  "StockMenuBar": {
-    "description": "Auto imported from /components/boards/stock-view/StockMenuBar.vue"
-  },
-  "LazyStockMenuBar": {
-    "description": "Auto imported from /components/boards/stock-view/StockMenuBar.vue"
-  },
-  "StockView": {
-    "description": "Auto imported from /components/boards/stock-view/StockView.vue"
-  },
-  "LazyStockView": {
-    "description": "Auto imported from /components/boards/stock-view/StockView.vue"
   },
   "SharedBoard": {
     "description": "Auto imported from /components/boards/shared-view/SharedBoard.vue"
@@ -190,5 +172,23 @@
   },
   "LazySharedCardsTool": {
     "description": "Auto imported from /components/boards/shared-view/SharedCardsTool.vue"
+  },
+  "StockCard": {
+    "description": "Auto imported from /components/boards/stock-view/StockCard.vue"
+  },
+  "LazyStockCard": {
+    "description": "Auto imported from /components/boards/stock-view/StockCard.vue"
+  },
+  "StockMenuBar": {
+    "description": "Auto imported from /components/boards/stock-view/StockMenuBar.vue"
+  },
+  "LazyStockMenuBar": {
+    "description": "Auto imported from /components/boards/stock-view/StockMenuBar.vue"
+  },
+  "StockView": {
+    "description": "Auto imported from /components/boards/stock-view/StockView.vue"
+  },
+  "LazyStockView": {
+    "description": "Auto imported from /components/boards/stock-view/StockView.vue"
   }
 }

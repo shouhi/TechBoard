@@ -16,65 +16,65 @@
               a.text-center(@click='login(onGoogle)')
                 img(:src="require('~/assets/images/btn_google_signin_dark_pressed_web@2x.png')" style="max-width:200px")
             v-col(cols="12").text-center
-              a.text-center(@click='login(onFacebook)')
-                img(:src="require('~/assets/images/66389811_2420388444687325_4985302625051213824_n.png')" style="max-width:200px")
+              a.text-center(@click='login(onGithub)')
+                img(:src="require('~/assets/images/github.png')" style="max-width:260px; margin-left:60px;")
             v-col(cols="12").text-center
               p(text-align="center") すでにアカウントをお持ちですか？
               v-btn(@click="onSignup") 新規登録はこちら
     //- slot
 </template>
 <script>
-import firebase from 'firebase'
+import firebase from "firebase";
 export default {
-  name: 'App',
+  name: "App",
   components: {},
   data: () => ({
     showPassword: false,
-    usermail: '',
-    userpass: '',
-    nexturl: '',
+    usermail: "",
+    userpass: "",
+    nexturl: "",
     localDatas: undefined,
   }),
   computed: {},
   mounted() {
-    this.nexturl = this.$route.query.url
+    this.nexturl = this.$route.query.url;
   },
   methods: {
     async onGoogle() {
-      const provider = new firebase.auth.GoogleAuthProvider()
-      await firebase.auth().signInWithPopup(provider)
+      const provider = new firebase.auth.GoogleAuthProvider();
+      await firebase.auth().signInWithPopup(provider);
     },
-    async onFacebook() {
-      const provider = new firebase.auth.FacebookAuthProvider()
-      await firebase.auth().signInWithPopup(provider)
+    async onGithub() {
+      const provider = new firebase.auth.GithubAuthProvider();
+      await firebase.auth().signInWithPopup(provider);
     },
     async onEmail() {
       await firebase
         .auth()
-        .signInWithEmailAndPassword(this.usermail, this.userpass)
+        .signInWithEmailAndPassword(this.usermail, this.userpass);
     },
     async login(loginFunc) {
       try {
-        this.$nuxt.$loading.start()
-        await loginFunc()
-        this.$nuxt.$loading.finish()
+        this.$nuxt.$loading.start();
+        await loginFunc();
+        this.$nuxt.$loading.finish();
         if (this.nexturl) {
-          this.$router.push(decodeURI(this.nexturl))
+          this.$router.push(decodeURI(this.nexturl));
         } else {
-          this.$router.push('dashboard')
+          this.$router.push("dashboard");
         }
       } catch (error) {
-        this.$nuxt.$emit('openSnackbar', {
-          color: 'error',
+        this.$nuxt.$emit("openSnackbar", {
+          color: "error",
           text: this.$utils.errorMessage(error),
           timeout: 10000,
-        })
+        });
       }
-      this.$nuxt.$loading.finish()
+      this.$nuxt.$loading.finish();
     },
     onSignup(signup) {
-      this.$router.push(`/signup`)
+      this.$router.push(`/signup`);
     },
   },
-}
+};
 </script>
