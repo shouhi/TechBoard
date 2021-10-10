@@ -39,18 +39,3 @@ this.$nuxt.$loading.start()
 // ローディング停止
 this.stopLoading()
 ```
-
-#### スナックバー
-
-```
-this.$nuxt.$emit('openSnackbar', { color: 'success', text: 'SUCCESS' });
-```
-
-パラメータ
-
-| パラメータ名 |                        | 値                                                                                    | デフォルト値 |
-| ------------ | ---------------------- | ------------------------------------------------------------------------------------- | ------------ |
-| text         | メッセージ             | 'Hello KAITE'                                                                         | 空           |
-| y            | 表示する位置           | 'top', 'bottom', 'center'                                                             | 'top'        |
-| 'color'      | メッセージ             | 'success', 'error', 'warning', 'info'..., or 'purple', '#033', 'rgba(255, 0, 0, 0.5)' | 'success'    |
-| timeout      | 表示している時間(msec) | '5000'                                                                                | '3000'       |
